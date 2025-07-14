@@ -9,5 +9,5 @@ export function power(a, b) {
 // n제곱근 함수
 export function squareRoot(a, b) {
   // TODO4-2: a의 b제곱근을 계산하는 로직을 작성하세요
-  return Math.sqrt(a), Math.sqrt(b);
+  return a ** (1 / b);
 }
