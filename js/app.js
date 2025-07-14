@@ -32,8 +32,15 @@ function calculator(operation) {
     const num2 = parseFloat(num2Input.value);
 
     // 입력값에 대한 유효성 검사를 작성하세요
-    if (isNaN(num1) || isNaN(num2)) {
-      throw new Error('🤖숫자가 아닌건 계산하지 않습니다... 닝겐.');
+    if (isNaN(num1)) {
+      throw new Error(
+        '🤖숫자가 아닌건 계산하지 않습니다... 닝겐 첫 번째 자리에 숫자를 입력하십시오.'
+      );
+    }
+    if (isNaN(num2)) {
+      throw new Error(
+        '🤖숫자가 아닌건 계산하지 않습니다... 닝겐 두 번째 자리에 숫자를 입력하십시오.'
+      );
     }
     // [계산 결과]
     const result = operation(num1, num2);
