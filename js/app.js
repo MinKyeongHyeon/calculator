@@ -39,7 +39,7 @@ function calculator(operation) {
     const result = operation(num1, num2);
     // const result = ?;
     // 계산 결과 유효성 검사를 작성하세요
-    if (isNaN(result)) {
+    if (isNaN(result) || !isFinite(result)) {
       throw new Error(
         '계산 결과가 유효하지 않습니다.. 자폭을 실행합니다... 5초전..🤖'
       );
