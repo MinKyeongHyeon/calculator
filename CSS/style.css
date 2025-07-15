@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  font-family: 'Orbitron', 'Roboto Mono', monospace, sans-serif;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #00ffe7;
+  text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+
+.input-cont,
+.result-cont,
+.calculator {
+  background: rgba(40, 44, 52, 0.95);
+  border: 2px solid #00ffe7;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffe744;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+label {
+  color: #00ffe7;
+  font-weight: bold;
+}
+
+input[type='number'] {
+  background: #232526;
+  border: 1px solid #00ffe7;
+  border-radius: 6px;
+  color: #fff;
+  padding: 8px;
+  margin: 0 10px 10px 0;
+  width: 120px;
+  font-size: 1.1em;
+}
+
+button {
+  background: linear-gradient(90deg, #232526 0%, #00ffe7 100%);
+  color: #232526;
+  border: 2px solid #00ffe7;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-family: 'Orbitron', 'Roboto Mono', monospace, sans-serif;
+  font-weight: bold;
+  margin: 8px;
+  padding: 12px 24px;
+  box-shadow: 0 0 10px #00ffe788, 0 2px 4px #111;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: #00ffe7;
+  color: #232526;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffe7cc;
+}
+
+#result {
+  font-size: 1.3em;
+  color: #fffb00;
+  text-shadow: 0 0 8px #fffb00, 0 0 16px #00ffe7;
+  margin-top: 10px;
+}
+
+#upgrade-btn {
+  background: linear-gradient(90deg, #fffb00 0%, #00ffe7 100%);
+  color: #232526;
+  border: 2px solid #fffb00;
+  box-shadow: 0 0 10px #fffb0088, 0 2px 4px #111;
+}
+
+#advance-calculator {
+  margin-top: 30px;
+}
+
+::-webkit-input-placeholder {
+  color: #00ffe7aa;
+}
+::-moz-placeholder {
+  color: #00ffe7aa;
+}
+:-ms-input-placeholder {
+  color: #00ffe7aa;
+}
+::placeholder {
+  color: #00ffe7aa;
+}
